@@ -1,0 +1,236 @@
+body {
+  background-color: rgba(233,236,239,0.4);
+
+}
+
+a.edit {
+  margin-left: 5px;
+    margin-right: 10px;
+}
+a.delete {
+  margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.form-group {
+  margin-bottom: 1rem;
+}
+
+a.btn-link {
+  margin-bottom: 1rem;
+}
+
+div.tables, div.card.tab {
+  margin-bottom: 1rem;
+}
+button.btn-success, button.btn-warning {
+  margin: 0.5rem;
+}
+
+div.main {
+  background-color:white;
+}
+div.col-sm-4.main{
+  margin: 0 auto;
+}
+
+div#header {
+  text-align: center;
+}
+div h7#nip {
+  text-align: left;
+}
+div.summary h5{
+  display: inline;
+}
+div.summary h5 ~h5{
+  text-align: right;
+}
+
+div#footer {
+  text-align: center;
+}
+div.col-sm.raz{
+  text-align: right;
+  margin-right: 20px;
+}
+button.print {
+  margin-bottom: 10px;
+}
+@media print {
+   .screen {
+       display: none;
+    }
+    .print {
+       display: block;
+    }
+}
+div.sale {
+  margin-bottom: 30px;
+}
+div.sale h1 {
+  margin-bottom: 25px;
+}
+table.bill{
+  counter-reset: rowNumber -1;
+}
+table.bill tr {
+  counter-increment: rowNumber;
+}
+table.bill tr td:first-child::before {
+  content: counter(rowNumber);
+}
+
+ul.report li{
+  list-style-type: none;
+}
+ul.report {
+  padding-left: 0;
+}
+div.jumbotron {
+  background-color: rgba(233,236,239,0.4)
+}
+
+div.col-sm-8.sale{
+  width: 100%;
+}
+div.repa, div.repb, div.repc, div.repd{
+  float: left;
+  margin-right: 10px;
+}
+div.container.login{
+  height: 100%;
+}
+div.card-header.signin{
+  font-size: 28px;
+  text-align: center;
+}
+div.card-body{
+  text-align: center;
+}
+button.log{
+  width: 100%;
+}
+div.remember{
+  -text-align: left;
+  margin-bottom: .5rem;
+}
+div#one{
+  margin-top: 20px;
+}
+
+div.login{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+div#app{
+  position: relative;
+  min-height: calc(100vh - 10vh - 20px);
+
+}
+div#accordion{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.foot{
+  height: 10vh;
+  left: 0;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+  background-color: #006e800d;
+  line-height: 100px;
+  margin-top: 20px;
+}
+
+div.summary{
+  padding-bottom: 10vh;
+}
+
+div.bill.container{
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:850px){
+  table.table-hover{
+    font-size: 0.8rem;
+  }
+  button.btn-info.position{
+    font-size: 0.8rem;
+  }
+  table.table-hover{
+    margin-right: 5px;
+  }
+  div.op{
+    font-size: 0.8rem;
+  }
+  div.staty{
+    display: flex;
+    height: 160px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  div.stat{
+    height: 160px;
+    display: flex;
+    font-size: 20px;
+    flex-grow: 0;
+  }
+  div.repa{
+    float: none;
+    margin-right: 10px;
+  }
+  div.repb{
+    float: none;
+    margin-right: 10px;
+  }
+  div.repc{
+    float: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .offset-2{
+    margin-left: 0;
+  }
+  .offset-3{
+    margin-left: 0;
+  }
+
+  div.bill.container{
+    min-height: 100vh;
+  }
+}
+  @media (max-width:768px){
+    .h4, h4 {
+      font-size: 1rem;
+    }
+    .h2, h2 {
+      font-size: 0.8rem;
+    }
+    div.types{
+      margin-bottom: 80px;
+    }
+    div.stat{
+      max-height: 120px;
+    }
+    div.order {
+      margin-bottom: 150px;
+    }
+
+
+  }
+  @media (max-width:550px){
+    .topname
+    {
+      display:none;
+    }
+    div.bill.container{
+      min-height: 100vh;
+    }
+
+  }
